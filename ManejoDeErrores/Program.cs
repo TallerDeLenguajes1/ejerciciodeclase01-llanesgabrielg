@@ -12,12 +12,23 @@ namespace ManejoDeErrores
             list[2] = "Tuesday";
             list[3] = "Wednesday";
             list[4] = "Thursday";
-
-            for (int i = 0; i <= 5; i++)
+            try
             {
-                Console.WriteLine(list[i].ToString());
+                for (int i = 0; i <= 5; i++)
+                {
+                    Console.WriteLine(list[i].ToString());
+                }
+                
             }
-            Console.ReadLine();
+            catch (System.Exception ex)
+            {
+                //Console.WriteLine(ex.Message);
+                //Console.WriteLine("aqui va el mensaje de error " + ex.Message);
+                Console.WriteLine("aqui va el mensaje de error : desbordamiento de vector ");
+            }
+            //Console.ReadLine();
         }
     }
 }
+
+
