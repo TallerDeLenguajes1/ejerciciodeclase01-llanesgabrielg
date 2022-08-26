@@ -23,8 +23,8 @@ namespace ManejoDeErrores
             catch (System.Exception ex)
             {
                 //Console.WriteLine(ex.Message);
-                //Console.WriteLine("aqui va el mensaje de error " + ex.Message);
-                Console.WriteLine("aqui va el mensaje de error : desbordamiento de vector ");
+                Console.WriteLine("aqui va el mensaje de error: desbordamiento del vector " + ex.Message);
+                //Console.WriteLine("aqui va el mensaje de error : desbordamiento de vector ");
             }
             //Console.ReadLine();
         }
